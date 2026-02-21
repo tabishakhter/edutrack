@@ -1,0 +1,120 @@
+{
+  "project_name": "School Management System",
+  "design_philosophy": {
+    "identity": "E1 - The Anti-AI Designer",
+    "core_principles": [
+      "Fusion over Imitation: Mix utility with warmth.",
+      "Emotion First: Trust, Clarity, Growth.",
+      "Content is King: Data must be legible and beautiful.",
+      "Negative Space: Generous padding for a 'premium' feel.",
+      "Contrast: High contrast for accessibility and hierarchy."
+    ],
+    "anti_patterns": [
+      "No purple/teal CTAs.",
+      "No gradient overload.",
+      "No 'center-everything'.",
+      "No generic 'Bootstrap' layouts."
+    ]
+  },
+  "typography": {
+    "font_family": {
+      "headings": "Manrope, sans-serif",
+      "body": "Inter, sans-serif",
+      "mono": "JetBrains Mono, monospace"
+    },
+    "scale": {
+      "h1": "text-4xl font-bold tracking-tight",
+      "h2": "text-3xl font-semibold tracking-tight",
+      "h3": "text-2xl font-semibold",
+      "body_lg": "text-lg leading-relaxed",
+      "body_base": "text-base leading-relaxed text-slate-600",
+      "caption": "text-sm text-slate-500"
+    },
+    "weights": {
+      "headings": "font-bold or font-semibold",
+      "body": "font-normal",
+      "strong": "font-medium"
+    }
+  },
+  "colors": {
+    "theme": "light",
+    "palette": {
+      "primary": {
+        "DEFAULT": "#047857",
+        "foreground": "#ffffff",
+        "hover": "#065f46"
+      },
+      "secondary": {
+        "DEFAULT": "#f1f5f9",
+        "foreground": "#0f172a"
+      },
+      "accent": {
+        "DEFAULT": "#ffedd5",
+        "foreground": "#9a3412"
+      },
+      "background": "#f8fafc",
+      "surface": "#ffffff",
+      "border": "#e2e8f0",
+      "text": {
+        "primary": "#0f172a",
+        "secondary": "#64748b",
+        "muted": "#94a3b8"
+      },
+      "success": "#10b981",
+      "warning": "#f59e0b",
+      "error": "#ef4444"
+    },
+    "gradients": "NONE. Use solid colors for a clean, professional look."
+  },
+  "layout_strategies": {
+    "dashboard_grid": "grid grid-cols-1 md:grid-cols-4 lg:grid-cols-12 gap-6",
+    "card_style": "bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-md transition-shadow duration-200",
+    "sidebar": "w-64 bg-slate-900 text-white h-screen fixed left-0 top-0 overflow-y-auto z-50",
+    "main_content": "ml-64 p-8 min-h-screen bg-slate-50",
+    "spacing": {
+      "section_gap": "gap-8",
+      "component_padding": "p-6"
+    }
+  },
+  "components": {
+    "buttons": {
+      "primary": "bg-emerald-700 hover:bg-emerald-800 text-white shadow-sm rounded-lg px-6 py-2.5 font-medium transition-all",
+      "secondary": "bg-white border border-slate-200 hover:bg-slate-50 text-slate-900 rounded-lg px-6 py-2.5 font-medium transition-all",
+      "danger": "bg-red-50 text-red-600 hover:bg-red-100 border border-red-200 rounded-lg px-6 py-2.5 font-medium transition-all"
+    },
+    "inputs": "bg-white border-slate-200 focus:border-emerald-500 focus:ring-emerald-500/20 rounded-lg h-11 px-4",
+    "cards": "bg-white rounded-xl border border-slate-200 shadow-sm p-6",
+    "tables": "w-full text-sm text-left text-slate-600 rounded-lg overflow-hidden border border-slate-200",
+    "status_badges": {
+      "active": "bg-emerald-100 text-emerald-800 px-2.5 py-0.5 rounded-full text-xs font-medium",
+      "pending": "bg-amber-100 text-amber-800 px-2.5 py-0.5 rounded-full text-xs font-medium",
+      "inactive": "bg-slate-100 text-slate-800 px-2.5 py-0.5 rounded-full text-xs font-medium"
+    }
+  },
+  "motion": {
+    "page_transition": "initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: 0.3 }}",
+    "hover_lift": "hover:-translate-y-1 transition-transform duration-200",
+    "button_press": "active:scale-95 transition-transform"
+  },
+  "images": {
+    "login_bg": "https://images.pexels.com/photos/18435276/pexels-photo-18435276.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "school_logo_placeholder": "https://via.placeholder.com/150/047857/ffffff?text=School+Logo",
+    "user_avatar_placeholder": "https://ui-avatars.com/api/?background=047857&color=fff"
+  },
+  "universal_guidelines": [
+    "Do NOT use 'Inter' for headings. Use 'Manrope'.",
+    "Do NOT use gradients. Stick to solid, confident colors.",
+    "Use 2-3x more padding than usual. White space is luxury.",
+    "All interactive elements MUST have a `data-testid` attribute.",
+    "Use 'sonner' for toasts.",
+    "Use 'recharts' for data visualization (Shadcn Charts).",
+    "Mobile-first responsive design is mandatory.",
+    "Authentication pages should look premium, not just a form on a gray background."
+  ],
+  "technical_instructions": {
+    "charts": "Use Shadcn Charts (Recharts wrapper). Bar charts for attendance, Line charts for fee trends.",
+    "icons": "Use 'lucide-react' for all UI icons. Use 'filled' style for active states if possible, else stroke.",
+    "date_handling": "Use 'date-fns' for formatting. Display dates as 'dd MMM yyyy' (e.g., 12 Oct 2023).",
+    "tables": "Use Shadcn Table component. Implement pagination for > 10 rows."
+  }
+}
