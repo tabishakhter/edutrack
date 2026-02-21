@@ -304,6 +304,14 @@ class SchoolManagementAPITester:
                         "Generate PDF Receipt", success,
                         f"Status: {receipt_response.status_code}, Content-Type: {receipt_response.headers.get('content-type', 'unknown')}"
                     )
+                    
+                    # Test student payment history
+                    self.run_test(
+                        "Get Student Payment History", "GET", f"fee-payments/student/{first_student['id']}", 200,
+                        token=self.admin_token
+                    )
+        else:
+            self.log_test("Fee Payment Tests", False, "No students available for testing")
 
     def test_teacher_attendance(self):
         """Test teacher attendance endpoints"""
