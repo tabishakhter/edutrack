@@ -1,193 +1,217 @@
 {
-  "summary": "30/31 tests passed",
-  "success_rate": "96.8%",
+  "summary": "35/35 tests passed",
+  "success_rate": "100.0%",
   "test_results": [
     {
       "test_name": "Admin Login",
       "status": "PASS",
       "details": "Status: 200",
-      "timestamp": "2026-02-21T16:48:38.621718"
+      "timestamp": "2026-02-21T16:49:00.062928"
     },
     {
       "test_name": "Invalid Login",
       "status": "PASS",
       "details": "Status: 401",
-      "timestamp": "2026-02-21T16:48:38.744213"
+      "timestamp": "2026-02-21T16:49:00.168258"
     },
     {
       "test_name": "Teacher Registration",
       "status": "PASS",
       "details": "Status: 200",
-      "timestamp": "2026-02-21T16:48:39.106374"
+      "timestamp": "2026-02-21T16:49:00.509344"
     },
     {
       "test_name": "New Teacher Login",
       "status": "PASS",
       "details": "Status: 200",
-      "timestamp": "2026-02-21T16:48:39.425484"
+      "timestamp": "2026-02-21T16:49:00.848779"
     },
     {
       "test_name": "Get Current User",
       "status": "PASS",
       "details": "Status: 200",
-      "timestamp": "2026-02-21T16:48:39.529039"
+      "timestamp": "2026-02-21T16:49:00.979916"
     },
     {
       "test_name": "Get All Users",
       "status": "PASS",
       "details": "Status: 200",
-      "timestamp": "2026-02-21T16:48:39.657791"
+      "timestamp": "2026-02-21T16:49:01.081481"
     },
     {
       "test_name": "Teacher Access Control - Users",
       "status": "PASS",
       "details": "Status: 403",
-      "timestamp": "2026-02-21T16:48:39.768369"
+      "timestamp": "2026-02-21T16:49:01.185145"
     },
     {
       "test_name": "Get All Classes",
       "status": "PASS",
       "details": "Status: 200",
-      "timestamp": "2026-02-21T16:48:39.885284"
+      "timestamp": "2026-02-21T16:49:01.301832"
     },
     {
       "test_name": "Create Class",
       "status": "PASS",
       "details": "Status: 200",
-      "timestamp": "2026-02-21T16:48:40.032502"
+      "timestamp": "2026-02-21T16:49:01.403511"
     },
     {
       "test_name": "Duplicate Class Creation",
       "status": "PASS",
       "details": "Status: 400",
-      "timestamp": "2026-02-21T16:48:40.158060"
+      "timestamp": "2026-02-21T16:49:01.525518"
     },
     {
       "test_name": "Delete Class",
       "status": "PASS",
       "details": "Status: 200",
-      "timestamp": "2026-02-21T16:48:40.290792"
+      "timestamp": "2026-02-21T16:49:01.631234"
     },
     {
       "test_name": "Get All Students",
       "status": "PASS",
       "details": "Status: 200",
-      "timestamp": "2026-02-21T16:48:40.401375"
+      "timestamp": "2026-02-21T16:49:01.766690"
     },
     {
       "test_name": "Create Student",
       "status": "PASS",
       "details": "Status: 200",
-      "timestamp": "2026-02-21T16:48:40.529150"
+      "timestamp": "2026-02-21T16:49:01.875375"
     },
     {
       "test_name": "Get Student by ID",
       "status": "PASS",
       "details": "Status: 200",
-      "timestamp": "2026-02-21T16:48:40.632744"
+      "timestamp": "2026-02-21T16:49:02.005716"
     },
     {
       "test_name": "Update Student",
       "status": "PASS",
       "details": "Status: 200",
-      "timestamp": "2026-02-21T16:48:40.733706"
+      "timestamp": "2026-02-21T16:49:02.119576"
     },
     {
       "test_name": "Teacher View Student",
       "status": "PASS",
       "details": "Status: 200",
-      "timestamp": "2026-02-21T16:48:40.871114"
+      "timestamp": "2026-02-21T16:49:02.267707"
     },
     {
       "test_name": "Teacher Delete Student Access",
       "status": "PASS",
       "details": "Status: 403",
-      "timestamp": "2026-02-21T16:48:41.019627"
+      "timestamp": "2026-02-21T16:49:02.379845"
     },
     {
       "test_name": "Delete Student",
       "status": "PASS",
       "details": "Status: 200",
-      "timestamp": "2026-02-21T16:48:41.137400"
+      "timestamp": "2026-02-21T16:49:02.488909"
     },
     {
       "test_name": "Get Fee Structures",
       "status": "PASS",
       "details": "Status: 200",
-      "timestamp": "2026-02-21T16:48:41.255608"
+      "timestamp": "2026-02-21T16:49:02.613880"
     },
     {
       "test_name": "Create Fee Structure",
       "status": "PASS",
       "details": "Status: 200",
-      "timestamp": "2026-02-21T16:48:41.355100"
+      "timestamp": "2026-02-21T16:49:02.725901"
     },
     {
       "test_name": "Get Fee Payments",
       "status": "PASS",
       "details": "Status: 200",
-      "timestamp": "2026-02-21T16:48:41.461912"
+      "timestamp": "2026-02-21T16:49:02.834196"
     },
     {
-      "test_name": "Fee Payment Tests",
-      "status": "FAIL",
-      "details": "No students available for testing",
-      "timestamp": "2026-02-21T16:48:41.590931"
+      "test_name": "Create Fee Payment",
+      "status": "PASS",
+      "details": "Status: 200",
+      "timestamp": "2026-02-21T16:49:03.151718"
+    },
+    {
+      "test_name": "Generate PDF Receipt",
+      "status": "PASS",
+      "details": "Status: 200, Content-Type: application/pdf",
+      "timestamp": "2026-02-21T16:49:03.282832"
+    },
+    {
+      "test_name": "Get Student Payment History",
+      "status": "PASS",
+      "details": "Status: 200",
+      "timestamp": "2026-02-21T16:49:03.410907"
     },
     {
       "test_name": "Get Today Attendance",
       "status": "PASS",
       "details": "Status: 200",
-      "timestamp": "2026-02-21T16:48:41.718390"
+      "timestamp": "2026-02-21T16:49:03.517003"
     },
     {
       "test_name": "Teacher Check-in",
       "status": "PASS",
       "details": "Status: 200",
-      "timestamp": "2026-02-21T16:48:41.869970"
+      "timestamp": "2026-02-21T16:49:03.623476"
     },
     {
       "test_name": "Duplicate Check-in",
       "status": "PASS",
       "details": "Status: 400",
-      "timestamp": "2026-02-21T16:48:41.973920"
+      "timestamp": "2026-02-21T16:49:03.741913"
     },
     {
       "test_name": "Teacher Check-out",
       "status": "PASS",
       "details": "Status: 200",
-      "timestamp": "2026-02-21T16:48:42.087868"
+      "timestamp": "2026-02-21T16:49:03.845702"
     },
     {
       "test_name": "Get Teacher Attendance History",
       "status": "PASS",
       "details": "Status: 200",
-      "timestamp": "2026-02-21T16:48:42.193951"
+      "timestamp": "2026-02-21T16:49:03.955790"
     },
     {
       "test_name": "Get Student Attendance",
       "status": "PASS",
       "details": "Status: 200",
-      "timestamp": "2026-02-21T16:48:42.298975"
+      "timestamp": "2026-02-21T16:49:04.073740"
+    },
+    {
+      "test_name": "Bulk Student Attendance",
+      "status": "PASS",
+      "details": "Status: 200",
+      "timestamp": "2026-02-21T16:49:04.333238"
     },
     {
       "test_name": "Get Dashboard Stats",
       "status": "PASS",
       "details": "Status: 200",
-      "timestamp": "2026-02-21T16:48:42.532184"
+      "timestamp": "2026-02-21T16:49:04.454424"
     },
     {
       "test_name": "Dashboard Stats Content",
       "status": "PASS",
       "details": "All required stats present",
-      "timestamp": "2026-02-21T16:48:42.532790"
+      "timestamp": "2026-02-21T16:49:04.455550"
     },
     {
       "test_name": "Teacher Access to Users",
       "status": "PASS",
       "details": "Status: 403",
-      "timestamp": "2026-02-21T16:48:42.630506"
+      "timestamp": "2026-02-21T16:49:04.569053"
+    },
+    {
+      "test_name": "Teacher Delete Student",
+      "status": "PASS",
+      "details": "Status: 403",
+      "timestamp": "2026-02-21T16:49:04.841500"
     }
   ],
-  "timestamp": "2026-02-21T16:48:42.734315"
+  "timestamp": "2026-02-21T16:49:04.843014"
 }
